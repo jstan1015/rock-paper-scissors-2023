@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="offset-md-3 col-md-6 mt-2">
+    <div class="text-middle">
+      <h2>🏆</h2>
+    </div>
+    <table class="table table-bordered align-middle">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Player</th>
+          <th scope="col">Win</th>
+          <th scope="col">Lose</th>
+          <th scope="col">Winning Rate (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let data of allLeaderboardDetails; let idx = index">
+          <tr>
+            <th>{{ idx + 1 }}</th>
+            <td>{{ data.playerName }}</td>
+            <td>{{ data.playerWinCount }}</td>
+            <td>{{ data.computerWinCount }}</td>
+            <td>{{ data.winningRate }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>

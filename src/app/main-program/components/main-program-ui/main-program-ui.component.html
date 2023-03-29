@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="container" style="height:20px;">
+        <h3>{{ this.resultTxtUpdated }}</h3>
+    </div>
+    <div class="container action" style="height:250px;">
+        <div class="row">
+            <div class="offset-md-1 col-md-5">
+                <img [src]="playerImgSrc" class="player-hand img-responsive" [ngClass]="{'player-animation': isProgramRunningUpdated}" alt="Player Action">
+            </div>
+            <div class="offset-md-1 col-md-4">
+                <img [src]="computerImgSrc" class="img-responsive" [ngClass]="{'computer-animation': isProgramRunningUpdated}" alt="Computer action">
+            </div>
+        </div>
+    </div>
+</div>

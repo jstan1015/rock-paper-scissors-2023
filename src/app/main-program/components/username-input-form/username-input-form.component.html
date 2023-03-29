@@ -1,0 +1,13 @@
+<div class="container dialog-content">
+  <div class="">
+    <div class="card">
+      <form [formGroup]="form" class="form-inline container" style="height: 100px;">
+        <div class="">
+          <label for="username">Please enter the player name:</label>
+          <input type="text" class="form-control m-2" formControlName="username" value="Player">
+        </div>
+        <button type="submit" class="btn btn-primary mt-4" (click)="submit()">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

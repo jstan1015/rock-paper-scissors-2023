@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #343a40!important;
+    min-height: 100vh;
+    height: auto;
+}
+
+/* @media (max-width:767px) {
+    body {
+        max-height: 200vh;
+    }
+}
+
+@media (min-width:768px) {
+    body {
+        max-height: 200vh;
+    }
+*/
