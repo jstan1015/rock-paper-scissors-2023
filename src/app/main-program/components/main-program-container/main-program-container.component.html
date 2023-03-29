@@ -1,7 +1,9 @@
-<div class="container card w-100 text-center rounded h-100 custom-height" >
+<div class="container card w-100 text-center rounded h-100 custom-height mx-auto vertical-center" >
     <app-score-container [pScoreUpdated]="pScoreUpdated" [cScoreUpdated]="cScoreUpdated" [playerName]="playerName"></app-score-container>
-    <app-main-program-ui [resultTxtUpdated]="resultTxtUpdated" [isProgramRunningUpdated]="isProgramRunningUpdated" 
-    [playerImgSrc]="playerImgSrc" [computerImgSrc]="computerImgSrc"></app-main-program-ui>
+    <div class="container mb-2">
+        <app-main-program-ui [resultTxtUpdated]="resultTxtUpdated" [isProgramRunningUpdated]="isProgramRunningUpdated" 
+        [playerImgSrc]="playerImgSrc" [computerImgSrc]="computerImgSrc"></app-main-program-ui>
+    </div>
     <div class="container">
         <app-action-container (pScoreUpdated)="updateScore($event, 'p')" (cScoreUpdated)="updateScore($event, 'c')" 
         (resultTxtUpdated)="updateResultText($event)" (isProgramRunningUpdated)="updateProgramRunningStatus($event)"

@@ -71,7 +71,7 @@
 }
 
 
-/* @media (max-width:767px) {
+@media (max-width:767px) {
     img {
         max-width: 200px;
         max-height: 200px;
@@ -97,5 +97,5 @@
         max-width: 380px;
         max-height: 380px;
     }
-} */
+}
 

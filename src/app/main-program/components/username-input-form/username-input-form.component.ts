@@ -23,7 +23,7 @@ export class UsernameInputFormComponent {
   }
 
   submit(){
-    var username = this.form.controls['username'].value;
+    var username = this.form.controls['username'].value || "Player";
     this.dialogRef.close(username);
     this.loadingDone = true;
   }

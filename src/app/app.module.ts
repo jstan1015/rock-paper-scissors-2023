@@ -17,6 +17,8 @@ import { LoadingScreenComponent } from './main-program/components/loading-screen
 import { CommonModule } from '@angular/common';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { MockDbService } from './services/mock-db.service';
+import { StoreModule } from '@ngrx/store';
+import { LeaderboardDetailReducer } from './store/reducers/leaderboard-detail.reducer';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,10 @@ import { MockDbService } from './services/mock-db.service';
     CommonModule,
     MainProgramModule,
     LeaderboardModule,
+    StoreModule.forRoot({
+      leaderboardDetail: LeaderboardDetailReducer,
+    }),
+
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
